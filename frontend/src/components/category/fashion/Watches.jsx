@@ -6,58 +6,51 @@ import {
   FaRegBookmark,
 } from 'react-icons/fa'
 
-import './../fashion/Fashion.css'
+import './Fashion.css'
 
 const products = [
   {
     id: 1,
-    name: 'Nike Air Jordan Retro',
-    price: '₵1,250.00',
+    name: 'Rolex Datejust Silver',
+    price: '₵4,500.00',
     image:
-      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&q=80',
   },
 
   {
     id: 2,
-    name: 'New Balance 9060',
-    price: '₵980.00',
+    name: 'Luxury Gold Wrist Watch',
+    price: '₵3,200.00',
     image:
-      'https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1200&q=80',
   },
 
   {
     id: 3,
-    name: 'Adidas Ultra Boost',
-    price: '₵870.00',
+    name: 'Classic Black Leather Watch',
+    price: '₵1,850.00',
     image:
-      'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1200&q=80',
   },
 
   {
     id: 4,
-    name: 'Nike Dunk Low Panda',
-    price: '₵1,100.00',
+    name: 'Smart Digital Watch',
+    price: '₵2,400.00',
     image:
-      'https://images.unsplash.com/photo-1543508282-6319a3e2621f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=1200&q=80',
   },
 
   {
     id: 5,
-    name: 'Yeezy Boost 350',
-    price: '₵1,450.00',
+    name: 'Premium Rose Gold Watch',
+    price: '₵5,100.00',
     image:
-      'https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=1200&q=80',
-  },
-
-  {
-    id: 6,
-    name: 'Puma RS-X Sneakers',
-    price: '₵760.00',
-    image:
-      'https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1200&q=80',
   },
 ]
-const Sneakers = () => {
+
+const Watches = () => {
   const sliderRef = useRef(null)
 
   const slideLeft = () => {
@@ -77,7 +70,7 @@ const Sneakers = () => {
   return (
     <section className="fashion-section">
       <div className="fashion-header">
-        <h2>Sneakers</h2>
+        <h2>Luxury Watches</h2>
 
         <div className="fashion-arrows">
           <button onClick={slideLeft}>‹</button>
@@ -88,7 +81,6 @@ const Sneakers = () => {
       <div className="fashion-slider" ref={sliderRef}>
         {products.map((item) => (
           <div className="fashion-card" key={item.id}>
-            
             <Link
               to={`/product/${item.id}`}
               className="fashion-img-box"
@@ -112,9 +104,9 @@ const Sneakers = () => {
                 <span>Colours</span>
 
                 <div className="colors">
-                  <small className="blue"></small>
-                  <small className="cream"></small>
                   <small className="black"></small>
+                  <small className="cream"></small>
+                  <small className="blue"></small>
                 </div>
               </div>
 
@@ -122,16 +114,14 @@ const Sneakers = () => {
                 <span>Sizes</span>
 
                 <div className="sizes">
-                  <small>M</small>
-                  <small>L</small>
-                  <small>XL</small>
+                  <small>40</small>
+                  <small>42</small>
+                  <small>44</small>
                 </div>
               </div>
 
               <h2 className="price">{item.price}</h2>
             </div>
-
-           
           </div>
         ))}
       </div>
@@ -139,4 +129,4 @@ const Sneakers = () => {
   )
 }
 
-export default Sneakers
+export default Watches

@@ -34,7 +34,7 @@ const Footer = () => {
           <a href="#">My Account</a>
           <a href="#">Track Order</a>
           <a href="#">Size Guide</a>
-          <a href="tel:+233205462760">Call/Whatsapp: +233205462760</a>
+          <a href="tel:+233205462760">Call/Whatsapp: +233541254645</a>
         </div>
       </div>
 
