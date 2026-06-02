@@ -4,7 +4,7 @@ import Featured from '../components/featuredShop/Featured';
 import Category from '../components/category/Category';
 import Sneakers from '../components/category/sneakers/Sneakers';
 import Footer from '../components/footer/Footer';
-const Home = () => {
+const Index = () => {
   return (
     <div className="home">
       <Banner />
@@ -16,4 +16,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Index;
