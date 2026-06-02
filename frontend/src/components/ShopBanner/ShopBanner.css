@@ -1,0 +1,62 @@
+.shop-banner {
+  margin: 40px 15%;
+  padding: 40px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #ff6a88, #ff99ac);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary-btn {
+  background: #25d366;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid white;
+  padding: 12px 18px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.floating-icons {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 2rem;
+  opacity: 0.3;
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .shop-banner {
+    margin: 20px 5%;
+    padding: 30px;
+  }
+
+ 
+}

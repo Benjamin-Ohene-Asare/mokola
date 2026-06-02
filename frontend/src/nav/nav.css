@@ -5,32 +5,67 @@
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
-    padding: 20px 10%;
-    gap: 2rem;
-    color: #fff;
-}
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-  
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15%;
+  background: #fff;
+  position: relative;
 }
 
-.logo{
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
+/* logo */
+.logo h3 {
+  margin: 0;
+}
+
+/* search */
+.search {
+  flex: 1;
+  margin: 0 20px;
+}
+
+/* nav (desktop) */
+.nav {
+  display: flex;
+  gap: 20px;
 }
 
 .nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: black;
+}
+
+/* menu icon hidden on desktop */
+.menu {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 768px) {
+  .search {
+    display: none; /* optional: hide or move below */
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    display: none; /* hidden by default */
+  }
+
+  .nav.active {
+    display: flex;
+  }
 }
